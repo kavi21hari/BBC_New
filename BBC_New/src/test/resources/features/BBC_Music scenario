@@ -1,0 +1,49 @@
+Feature: Music Homepage
+  
+Background: Given that I am on the BBC Music Homepage and accept the cookies
+
+  
+@tag1
+Scenario: Verify Back To Back Sounds are displayed in the  Music Homepage
+
+When  I select the ‘ Music’ on the sounds Nav bar in sounds Homepage
+Then  I am on the Music page
+And   I can see  the Back To Back Sounds logo
+And   I can see the different categories of the music listed below
+
+ 
+ 
+@tag2
+Scenario: Verify ‘view all’ links are displayed on the music mixes
+
+When I click the ‘View all’ link
+Then I am on the ‘Music mixes’ page
+And  I see different featured music mixes logos
+    
+
+@tag3
+Scenario: Verify when i click the more episodes link is navigated to respective page
+
+When I click more episodes link on TV soundtracks from ‘Music Mixes’ module
+Then I am on the TV soundtracks page
+And  I can see all the episodes available for the  show
+
+
+@tag4
+Scenario: Selecting the Classical category from the Categories module on the  Music Homepage
+
+When I select Classical Category from catgories Module
+Then I am on ‘Classical’ Category page
+And  I see the Category page is listed by different Classical based Music .
+
+@tag5
+ Scenario: Verify back to back form listed and able to scroll left and right
+ 
+ When I click the back arrow 
+ Then I can see the next available show 
+ And  I click the front arrow
+ Then I can see the previous show
+
+
+
+ 
